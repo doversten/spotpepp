@@ -12,7 +12,32 @@ var client_secret = process.env.SPOTPEPP_CLIENT_SECRET; // Your secret
 var playlists = [
   "3lvq98RVr183ECZMiHOX7f",
   "7BMO1DEG5ctOpijDwbDjvs",
-  "5rgp37181Pup1ghNXf0JuL"
+  "5rgp37181Pup1ghNXf0JuL",
+  "4uHpAgHW7t38mxhYF9JMDk",
+  "0RPjmScL4VVP9YeouXPKwl",
+  "3ByBLCO0QqOJKtosxvEW5d",
+  "59ukgH9WMyZVW5H5xlYFff",
+  "5Fzzh00GylK3Ver8rz2oqh",
+  "0K6nAs4B4r9daQkYvShTwZ",
+  "39II92fao0D8aq5MSKDD29",
+  "1DBHkertP83bs9Zn5WMR1i",
+  "5pFbi0EFQd1qXbHC5ppnKg",
+  "0c0JfABc0sgYvKZdQ2cjOF",
+  "5TZyZNuoYbseiphgRh3WC1",
+  "1WEypNJeG7tBXA6gBrZUwQ",
+  "72RtNTgRVZOj5C7glKs2vS",
+  "2D8wMJ8O3GeNWDmb9BcAVq",
+  "4vFvwCkbD08FsBRRBShM4S",
+  "0hiTeh7gVfXPAh8CC8sZhh",
+  "5oiiQBqlA1eVBQJRw05E9s",
+  "0i0j3aBuSTbZe191kbT6ab",
+  "6VSRN2pssDRgk8BGDMAwF0",
+  "2wTneFHoTGsxjPZZJMiiHy",
+  "38Ks64Ka50i8GSU3eF7kZT",
+  "50wfz46PdUXTycmcbnZ62n",
+  "3GFcvF81GxgYsBgsyW6viZ",
+  "6r718WjvEgCO2F8L9OoY06",
+  "5LEBmYWpfkaQZ3hDqKJAyB"
 ]
 
 // your application requests authorization
