@@ -10,6 +10,7 @@ var client_secret = process.env.SPOTPEPP_CLIENT_SECRET; // Your secret
 // ]
 
 var playlists = [
+  "14TuiUwbVWav03pFmsGnLt",
   "3lvq98RVr183ECZMiHOX7f",
   "7BMO1DEG5ctOpijDwbDjvs",
   "5rgp37181Pup1ghNXf0JuL",
