@@ -3,13 +3,9 @@ var request = require('request'); // "Request" library
 var client_id = process.env.SPOTPEPP_CLIENT_ID; // Your client id
 var client_secret = process.env.SPOTPEPP_CLIENT_SECRET; // Your secret
 
-// var playlists = [
-//   "spotify:user:doversten:playlist:3lvq98RVr183ECZMiHOX7f",
-//   "spotify:user:doversten:playlist:7BMO1DEG5ctOpijDwbDjvs",
-//   "spotify:user:doversten:playlist:5rgp37181Pup1ghNXf0JuL"
-// ]
-
 var playlists = [
+  "05FrPmv2oz4oO3BRAvJEm5",
+  "6sLdH3TF4lHBODR5YF2vTz",
   "14TuiUwbVWav03pFmsGnLt",
   "3lvq98RVr183ECZMiHOX7f",
   "7BMO1DEG5ctOpijDwbDjvs",
@@ -60,7 +56,7 @@ var getTracksOfPlaylist = function(playlist, callback){
       // use the access token to access the Spotify Web API
       var token = body.access_token;
       var options = {
-        url: 'https://api.spotify.com/v1/users/doversten/playlists/'+playlist+'/tracks',
+        url: 'https://api.spotify.com/v1/users/doversten/playlists/'+playlist,
         headers: {
           'Authorization': 'Bearer ' + token
         },
@@ -68,11 +64,19 @@ var getTracksOfPlaylist = function(playlist, callback){
       };
       request.get(options, function(error, response, body) {
         if (!error)
-          for(var item in body.items) {
-            var track = body.items[item].track;
+          console.log(body.name);
+
+          for(var item in body.tracks.items) {
+            var track = body.tracks.items[item].track;
             var artists = track.artists;
-            console.log(track.id + ", " + artists[0] + ' - ' + track.name);
+            for(var artist in artists) {
+              //process.stdout.write(artists[artist].name + ', ');
+            }
+            console.log(track.id);
+            //console.log(' - ' + track.name);
           }
+
+          //console.log();
           callback();
       });
     }
