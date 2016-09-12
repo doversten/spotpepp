@@ -4,6 +4,12 @@ var client_id = process.env.SPOTPEPP_CLIENT_ID; // Your client id
 var client_secret = process.env.SPOTPEPP_CLIENT_SECRET; // Your secret
 
 var playlists = [
+  "2HtnDTNZT2nUjbmdtWqYcA",
+  "3p99PL9fug2VNKnOpjpohh",
+  "6JALwLOJ2L2hbS4iVoTdWI",
+  "4KIIbvj71af2e6EXfShimf",
+  "3qxthH9qwAWM1qmjpzcEu1",
+  "413b8cyKUBaOKkhdfcj0oL",
   "2EsCXv596mHNHGkJfqS7mD",
   "05FrPmv2oz4oO3BRAvJEm5",
   "6sLdH3TF4lHBODR5YF2vTz",
@@ -65,16 +71,16 @@ var getTracksOfPlaylist = function(playlist, callback){
       };
       request.get(options, function(error, response, body) {
         if (!error)
-          console.log(body.name);
+          //console.log(body.name);
 
           for(var item in body.tracks.items) {
             var track = body.tracks.items[item].track;
             var artists = track.artists;
             for(var artist in artists) {
-              process.stdout.write(artists[artist].name + ', ');
+              //process.stdout.write(artists[artist].name + ', ');
             }
             console.log(track.id);
-            console.log(' - ' + track.name);
+            //console.log(track.name);
           }
 
           //console.log();
